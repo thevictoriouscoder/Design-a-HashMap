@@ -12,7 +12,7 @@ class HashMap:
     def get(self, key: str) -> int:
         hash_key = self._hash_function(key)
         if self.map[hash_key] is None:
-            return -1
+            return None
         return self.map[hash_key]
     
     def delete(self, key: str) -> None:

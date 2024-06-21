@@ -1,6 +1,6 @@
 Initial intuition:
 
-Create a list with max(hash()) spaces, this ensures all keys can be inserted without any chance of collision. However, this is a failure because in python, hash() is unbounded and by doing so, it creates a lot of space which causes very bad performance if a lot of slots in the list are unoccupied.
+Create a list with max(float('inf')) spaces, this ensures all keys can be inserted without any chance of collision. However, this is a failure because in python, hash() is unbounded and by doing so, it creates a lot of space which causes very bad performance if a lot of slots in the list are unoccupied.
 
 Second version:
 Create a hashMap with chaining by modding the hash values of the keys by size 30(In the problem descriptions, the hashmaps are assumed to be small with at most 30 keys):

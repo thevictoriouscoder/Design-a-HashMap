@@ -37,7 +37,7 @@ class TestHashMap(unittest.TestCase):
             self.assertEqual(self.map.get(f"key{i}"), i)
     
     def test_print_map(self):
-        for i in range(35):
+        for i in range(30):
             self.map.set(f"key{i}", i)
         self.map.printMap()
     

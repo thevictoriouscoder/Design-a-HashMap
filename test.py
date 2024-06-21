@@ -1,9 +1,9 @@
 import unittest
-import hashmap_original_version
+import hashmap_linear_probing
 
 class TestHashMap(unittest.TestCase):
     def setUp(self):
-        self.map = hashmap_original_version.HashMap()
+        self.map = hashmap_linear_probing.HashMap()
     
     def test_set_get(self):
         self.map.set("key1", 1)
